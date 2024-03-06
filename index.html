@@ -186,40 +186,114 @@
     </div>
   </section>
 
-  <section class="courses">
+  <section class="main__directions directions" id="directions">
     <div class="container">
-      <div class="courses__inner">
-
-        <div class="courses__heading">
-          <h2 class="courses__title">Наши работы, на которых
-            мы специализируемся</h2>
-          <div class="header__btn-box">
-            <a href="#" class="header__body-btn">
-              Все курсы
-            </a>
-          </div>
+      <div class="directions__inner">
+        <div class="directions__heading heading heading--text-center">
+          <h2 class="main__about-title">Наши курсы</h2>
         </div>
-        <div class="list__body">
-          <ul class="list__filter-box">
-            <li class="list__filter-item">
-              <button class="list__filter-btn" type="button">Поплуярное</button>
-              <button class="list__filter-btn" type="button">HR</button>
-              <button class="list__filter-btn" type="button">IT</button>
-              <button class="list__filter-btn" type="button">Бизнес</button>
-              <button class="list__filter-btn" type="button">Мендеджмент</button>
-              <button class="list__filter-btn" type="button">Другое</button>
+        <div class="directions__body">
+          <ul class="directions__filter-box">
+            <li class="directions__filter-item">
+              <button class="directions__filter-btn directions__filter-btn--active" type="button"
+                data-filter="all">Популярное</button>
+            </li>
+            <li class="directions__filter-item">
+              <button class="directions__filter-btn" type="button"
+                data-filter=".directions__list-item--marketing">Маркетинг</button>
+            </li>
+            <li class="directions__filter-item">
+              <button class="directions__filter-btn" type="button"
+                data-filter=".directions__list-item--management">Менеджмент</button>
+            </li>
+            <li class="directions__filter-item">
+              <button class="directions__filter-btn" type="button" data-filter=".directions__list-item--hr">HR</button>
+            </li>
+            <li class="directions__filter-item">
+              <button class="directions__filter-btn" type="button"
+                data-filter=".directions__list-item--design">Дизайн</button>
+            </li>
+            <li class="directions__filter-item">
+              <button class="directions__filter-btn" type="button"
+                data-filter=".directions__list-item--development">IT</button>
             </li>
           </ul>
-          <ul class="corses__list">
-            <li class="courses__list-item"></li>
-            <li class="courses__list-item"></li>
-            <li class="courses__list-item"></li>
-            <li class="courses__list-item"></li>
-            <li class="courses__list-item"></li>
-            <li class="courses__list-item"></li>
+          <ul class="directions__list">
+            <li class="mix directions__list-item directions__list-item--marketing" data-order="1">
+              <a class="directions__list-link" href="#">
+                <div class="directions__image-box">
+                  <img src="images/directions/1.jpg" alt="">
+                </div>
+                <div class="directions__link-content">
+                  <div class="directions__link-tag">Маркетинг</div>
+                  <p class="directions__link-text">
+                    Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Мир ведущими своего правилами щеке злых ему собрал дорогу, лучше, до запятой которое выйти сих толку запятых, силуэт она великий.
+                  </p>
+                  <div class="directions__link-btn">Посмотреть курс</div>
+                </div>
+              </a>
+            </li>
+            <li class="mix directions__list-item directions__list-item--management" data-order="2">
+              <a class="directions__list-link" href="#">
+                <div class="directions__image-box">
+                  <img src="images/directions/2.jpg" alt="">
+                </div>
+                <div class="directions__link-content">
+                  <div class="directions__link-tag">Менеджмент</div>
+                  <p class="directions__link-text">
+                    Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Мир ведущими своего правилами щеке злых ему собрал дорогу, лучше, до запятой которое выйти сих толку запятых, силуэт она великий.
+                  </p>
+                  <div class="directions__link-btn">Посмотреть курс</div>
+                </div>
+              </a>
+            </li>
+            <li class="mix directions__list-item directions__list-item--hr" data-order="3">
+              <a class="directions__list-link" href="#">
+                <div class="directions__image-box">
+                  <img src="images/directions/3.jpg" alt="">
+                </div>
+                <div class="directions__link-content">
+                  <div class="directions__link-tag">HR</div>
+                  <p class="directions__link-text">
+                    Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Мир ведущими своего правилами щеке злых ему собрал дорогу, лучше, до запятой которое выйти сих толку запятых, силуэт она великий.
+                  </p>
+                  <div class="directions__link-btn">Посмотреть курс</div>
+                </div>
+              </a>
+            </li>
+            <li class="mix directions__list-item directions__list-item--design" data-order="4">
+              <a class="directions__list-link" href="#">
+                <div class="directions__image-box">
+                  <img src="images/directions/4.jpg" alt="">
+                </div>
+                <div class="directions__link-content">
+                  <div class="directions__link-tag">Дизайн</div>
+                  <p class="directions__link-text">
+                    Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Мир ведущими своего правилами щеке злых ему собрал дорогу, лучше, до запятой которое выйти сих толку запятых, силуэт она великий.
+                  </p>
+                  <div class="directions__link-btn">Посмотреть курс</div>
+                </div>
+              </a>
+            </li>
+            <li class="mix directions__list-item directions__list-item--development" data-order="5">
+              <a class="directions__list-link" href="#">
+                <div class="directions__image-box">
+                  <img src="images/directions/5.jpg" alt="">
+                </div>
+                <div class="directions__link-content">
+                  <div class="directions__link-tag">IT</div>
+                  <p class="directions__link-text">
+                    Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Мир ведущими своего правилами щеке злых ему собрал дорогу, лучше, до запятой которое выйти сих толку запятых, силуэт она великий.
+                  </p>
+                  <div class="directions__link-btn">Посмотреть курс</div>
+                </div>
+              </a>
+            </li>
+            <li class="mix directions__list-item directions__list-item--empty" data-order="6">
+              <span>Новые курсы в разработке.</span>
+            </li>
           </ul>
         </div>
-
       </div>
     </div>
   </section>
@@ -227,6 +301,10 @@
 
 </body>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/mixitup.min.js"></script>
 <script src="js/main.js"></script>
 
 </html>
