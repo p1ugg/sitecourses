@@ -47,11 +47,11 @@
             <div class="header__body-text"><span>Передовая IT студия</span></div>
             <h1 class="header__body-title">Мы создаем легкие решения
               сложных задач и проблем</h1>
-            <div class="header__btn-box">
-              <a href="#" class="header__body-btn">
-                Наши проекты
-              </a>
-            </div>
+
+            <a href="#" class="header__body-btn">
+              <div class="header__btn-box">Наши проекты</div>
+
+            </a>
           </div>
         </div>
       </div>
@@ -101,9 +101,10 @@
 
             </div>
           </div>
-          <div class="about__btn-box">
-            <a href="#" class="about__body-btn">Все услуги</a>
-          </div>
+
+          <a href="#" class="about__body-btn">
+            <div class="about__btn-box">Все услуги</div>
+          </a>
       </section>
   </div>
   <section class="main__stats">
@@ -190,8 +191,8 @@
     <div class="container">
       <div class="directions__inner">
         <div class="directions__heading heading heading--text-center">
-          <h2 class="directions__heading-title">Наши курсы</h2>
-          <a href="#" class="header__btn-box">
+          <h3 class="directions__heading-title">Наши курсы</h3>
+          <a href="#" class="directions__btn-box">
             <div class="header__body-btn">
               Все курсы
             </div>
@@ -343,22 +344,33 @@
           <div class="footer__links">
             <ul class="footer__links-list">
               <h3 class="footer__items-title">Контактная информация</h3>
+              <div class="footer__items-block">
+                <li class="fotter__link-item">
+                  <img src="/images/icon/icon_mail.svg" alt="mail" class="footer_imgs">
+                  <span class="footer__items-text">
+                    test@test.ru
+                  </span>
+                </li>
+              </div>
 
-              <li class="fotter__link-item">
-                <span class="main__about-text">
-                  test@test.ru
-                </span>
-              </li>
-              <li class="fotter__link-item">
-                <span class="main__about-text">
-                  +8 777 555 66 99
-                </span>
-              </li>
-              <li class="fotter__link-item">
-                <span class="main__about-text">
-                  Москва, Бульвар Ленина 33
-                </span>
-              </li>
+              <div class="footer__items-block">
+                <li class="fotter__link-item">
+                  <img src="/images/icon/icon_call.svg" alt="mail" class="footer_imgs">
+                  <span class="footer__items-text">
+                    +8 777 555 66 99
+                  </span>
+                </li>
+              </div>
+
+              <div class="footer__items-block">
+                <li class="fotter__link-item">
+                  <img src="/images/icon/icon_place.svg" alt="mail" class="footer_imgs">
+                  <span class="footer__items-text">
+                    Москва, Бульвар Ленина 33
+                  </span>
+                </li>
+              </div>
+
             </ul>
           </div>
         </div>
@@ -368,11 +380,19 @@
             <ul class="footer__links-list">
               <h3 class="footer__items-title">Направления</h3>
 
-              <li class="fotter__link-item">
-                <span class="main__about-text">
-                  Маркетинг
-                </span>
-              </li>
+
+              <div class="footer__items-block">
+                <li class="fotter__link-item">
+                  <a href="#" class="footer_link">
+                    <img src="/images/icon/right-arrow.svg" class="footer_right-arrow">
+                    <span class="footer__items-link">
+                      Маркетинг
+                    </span>
+                  </a>
+                </li>
+              </div>
+
+
               <li class="fotter__link-item">
                 <span class="main__about-text">
                   IT
@@ -440,7 +460,7 @@
       <div class="inc">
 
         <span class="main__about-text">
-          (с) 2019. Все права защищены.
+          (с) 2024. Все права защищены.
         </span>
 
       </div>
