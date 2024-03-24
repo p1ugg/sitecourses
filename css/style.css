@@ -667,6 +667,7 @@ button[type="submit"]:hover{
 }
 .footer__links {
   display: block;
+  text-align: start
 }
 .footer__links-list {
   justify-content: space-between;
@@ -693,6 +694,7 @@ line-height: normal;
 }
 
 .inc {
+  padding-bottom: 30px;
 }
 
 .line4{
