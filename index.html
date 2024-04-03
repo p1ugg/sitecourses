@@ -20,19 +20,14 @@
             <div class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
-                  <a href="#" class="header__nav-link">Главная</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="#" class="header__nav-link">Наши проекты</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="#" class="header__nav-link">Курсы</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="#" class="header__nav-link">Новости</a>
+                  <a href="#" class="header__nav-link">Каталог курсов</a>
                 </li>
                 <li class="header__nav-item">
                   <a href="#" class="header__nav-link">Контакты</a>
+                </li>
+
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Техподдержка</a>
                 </li>
               </ul>
             </div>
@@ -44,14 +39,13 @@
       <div class="header__body">
         <div class="container">
           <div class="header__body-main">
-            <div class="header__body-text"><span>Передовая IT студия</span></div>
-            <h1 class="header__body-title">Мы создаем легкие решения
-              сложных задач и проблем</h1>
-            <div class="header__btn-box">
-              <a href="#" class="header__body-btn">
-                Наши проекты
-              </a>
-            </div>
+            <span class="header__body-text">Студия по созданию курсов</span>
+            <h1 class="header__body-title">Открой для себя новую профессию благодаря нашим курсам</h1>
+
+            <a href="#" class="header__body-btn">
+              <div class="header__btn-box">Наши курсы</div>
+
+            </a>
           </div>
         </div>
       </div>
@@ -71,7 +65,7 @@
           </div>
           <div class="about__row">
             <div class="about__row-item">
-              <img class="about__imagee" src="../images/icons/icon-fiel.svg">
+              <img class="about__imagee" src="./images/plan-list-svgrepo-com.svg">
               <div class="about__textsss">
                 <h3 class="about__row-title">Создание сайтов</h3>
                 <span class="main__about-text">
@@ -81,7 +75,7 @@
 
             </div>
             <div class="about__row-item">
-              <img class="about__imagee" src="../images/icons/icon-fiel.svg">
+              <img class="about__imagee" src="./images/plan-list-svgrepo-com.svg">
               <div class="about__textsss">
                 <h3 class="about__row-title">Создание сайтов</h3>
                 <span class="main__about-text">
@@ -91,7 +85,7 @@
 
             </div>
             <div class="about__row-item">
-              <img class="about__imagee" src="../images/icons/icon-fiel.svg">
+              <img class="about__imagee" src="./images/plan-list-svgrepo-com.svg">
               <div class="about__textsss">
                 <h3 class="about__row-title">Создание сайтов</h3>
                 <span class="main__about-text">
@@ -101,9 +95,10 @@
 
             </div>
           </div>
-          <div class="about__btn-box">
-            <a href="#" class="about__body-btn">Все услуги</a>
-          </div>
+
+          <a href="#" class="about__body-btn">
+            <div class="about__btn-box">Все услуги</div>
+          </a>
       </section>
   </div>
   <section class="main__stats">
@@ -129,7 +124,7 @@
           </div>
 
           <div class="stats__img">
-            <img src="./images/stats-img.jpg" class="stats__inner-img">
+            <img src="./images/desk-lamp-svgrepo-com.svg" class="stats__inner-img">
           </div>
         </div>
       </div>
@@ -186,39 +181,379 @@
     </div>
   </section>
 
-  <section class="courses">
+  <section class="main__directions directions" id="directions">
     <div class="container">
-      <div class="courses__inner">
-
-        <div class="courses__heading">
-          <h2 class="courses__title">Наши работы, на которых
-            мы специализируемся</h2>
-          <div class="header__btn-box">
-            <a href="#" class="header__body-btn">
+      <div class="directions__inner">
+        <div class="directions__heading heading heading--text-center">
+          <h3 class="directions__heading-title">Наши курсы</h3>
+          <a href="#" class="directions__btn-box">
+            <div class="header__body-btn">
               Все курсы
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
-        <div class="list__body">
-          <ul class="list__filter-box">
-            <li class="list__filter-item">
-              <button class="list__filter-btn" type="button">Поплуярное</button>
-              <button class="list__filter-btn" type="button">HR</button>
-              <button class="list__filter-btn" type="button">IT</button>
-              <button class="list__filter-btn" type="button">Бизнес</button>
-              <button class="list__filter-btn" type="button">Мендеджмент</button>
-              <button class="list__filter-btn" type="button">Другое</button>
+        <div class="directions__body">
+          <ul class="directions__filter-box">
+            <li class="directions__filter-item">
+              <button class="directions__filter-btn directions__filter-btn--active" type="button"
+                data-filter="all">Все</button>
+            </li>
+
+            <li class="directions__filter-item">
+              <button class="directions__filter-btn" type="button"
+                data-filter=".directions__list-item--popular">Популярное</button>
+            </li>
+            <li class="directions__filter-item">
+              <button class="directions__filter-btn" type="button"
+                data-filter=".directions__list-item--marketing">Маркетинг</button>
+            </li>
+            <li class="directions__filter-item">
+              <button class="directions__filter-btn" type="button"
+                data-filter=".directions__list-item--management">Менеджмент</button>
+            </li>
+            <li class="directions__filter-item">
+              <button class="directions__filter-btn" type="button" data-filter=".directions__list-item--hr">HR</button>
+            </li>
+            <li class="directions__filter-item">
+              <button class="directions__filter-btn" type="button"
+                data-filter=".directions__list-item--design">Дизайн</button>
+            </li>
+            <li class="directions__filter-item">
+              <button class="directions__filter-btn" type="button"
+                data-filter=".directions__list-item--development">IT</button>
             </li>
           </ul>
-          <ul class="corses__list">
-            <li class="courses__list-item"></li>
-            <li class="courses__list-item"></li>
-            <li class="courses__list-item"></li>
-            <li class="courses__list-item"></li>
-            <li class="courses__list-item"></li>
-            <li class="courses__list-item"></li>
+          <ul class="directions__list">
+
+            <li class="mix directions__list-item directions__list-item--marketing directions__list-item--popular" data-order="1">
+              <a class="directions__list-link" href="#">
+                <div class="directions__image-box">
+                  <img src="images/directions/1.jpg" alt="">
+                </div>
+                <div class="directions__link-content">
+                  <div class="directions__link-tag">Маркетинг</div>
+                  <p class="directions__link-text">
+                    Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Мир ведущими
+                    своего правилами щеке злых ему собрал дорогу, лучше, до запятой которое выйти сих толку запятых,
+                    силуэт она великий.
+                  </p>
+                  <div class="direction__inner-content__price">
+                    <div class="directions__link-btn">Купить курс</div>
+                    <span class="directions__inner-content__text">
+                      500
+                      <sup clas="directions__sup">₽</sup>
+                    </span>
+                  </div>
+
+
+                </div>
+              </a>
+            </li>
+            <li class="mix directions__list-item directions__list-item--management" data-order="2">
+              <a class="directions__list-link" href="#">
+                <div class="directions__image-box">
+                  <img src="images/directions/2.jpg" alt="">
+                </div>
+                <div class="directions__link-content">
+                  <div class="directions__link-tag">Менеджмент</div>
+                  <p class="directions__link-text">
+                    Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Мир ведущими
+                    своего правилами щеке злых ему собрал дорогу, лучше, до запятой которое выйти сих толку запятых,
+                    силуэт она великий.
+                  </p>
+                  <div class="directions__link-btn">Посмотреть курс</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="mix directions__list-item directions__list-item--hr" data-order="3">
+              <a class="directions__list-link" href="#">
+                <div class="directions__image-box">
+                  <img src="images/directions/3.jpg" alt="">
+                </div>
+                <div class="directions__link-content">
+                  <div class="directions__link-tag">HR</div>
+                  <p class="directions__link-text">
+                    Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Мир ведущими
+                    своего правилами щеке злых ему собрал дорогу, лучше, до запятой которое выйти сих толку запятых,
+                    силуэт она великий.
+                  </p>
+                  <div class="directions__link-btn">Посмотреть курс</div>
+                </div>
+              </a>
+            </li>
+            <li class="mix directions__list-item directions__list-item--design directions__list-item--popular" data-order="4">
+              <a class="directions__list-link" href="#">
+                <div class="directions__image-box">
+                  <img src="images/directions/4.jpg" alt="">
+                </div>
+                <div class="directions__link-content">
+                  <div class="directions__link-tag">Дизайн</div>
+                  <p class="directions__link-text">
+                    Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Мир ведущими
+                    своего правилами щеке злых ему собрал дорогу, лучше, до запятой которое выйти сих толку запятых,
+                    силуэт она великий.
+                  </p>
+                  <div class="directions__link-btn">Посмотреть курс</div>
+                </div>
+              </a>
+            </li>
+            <li class="mix directions__list-item directions__list-item--development" data-order="5">
+              <a class="directions__list-link" href="#">
+                <div class="directions__image-box">
+                  <img src="images/directions/5.jpg" alt="">
+                </div>
+                <div class="directions__link-content">
+                  <div class="directions__link-tag">IT</div>
+                  <p class="directions__link-text">
+                    Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Мир ведущими
+                    своего правилами щеке злых ему собрал дорогу, лучше, до запятой которое выйти сих толку запятых,
+                    силуэт она великий.
+                  </p>
+                  <div class="directions__link-btn">Посмотреть курс</div>
+                </div>
+              </a>
+            </li>
+            <li class="mix directions__list-item directions__list-item--empty" data-order="6">
+              <span>Новые курсы в разработке.</span>
+            </li>
           </ul>
         </div>
+      </div>
+    </div>
+  </section>
+  <section class="mailing">
+    <div class="container">
+      <hr class="line3">
+      <div class="mailing__block">
+        <div class="mailing__title">
+          <h3 class="mailing__title-text">Создание сайтов</h3>
+          <span class="main__about-text">Полезные статьи, акции, новости - получите все это сейчас!</span>
+        </div>
+
+        <div class="mailing__form">
+          <form action="#" method="post">
+            <label for="email">Подпишитесь на нашу рассылку:</label>
+            <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+            <button type="submit">Подписаться</button>
+          </form>
+        </div>
+
+        <div class="mailing__tex">
+          <span class="main__about-text">Мы не шлем спам, и передаем никому ваши данные.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__contact-info">
+          <div class="footer__links">
+            <ul class="footer__links-list">
+              <h3 class="footer__items-title">Контактная информация</h3>
+              <div class="footer__items-block">
+                <li class="fotter__link-item">
+                  <img src="/images/icon/icon_mail.svg" alt="mail" class="footer_imgs">
+                  <span class="footer__items-text">
+                    test@test.ru
+                  </span>
+                </li>
+              </div>
+
+              <div class="footer__items-block">
+                <li class="fotter__link-item">
+                  <img src="/images/icon/icon_call.svg" alt="mail" class="footer_imgs">
+                  <span class="footer__items-text">
+                    +8 777 555 66 99
+                  </span>
+                </li>
+              </div>
+
+              <div class="footer__items-block">
+                <li class="fotter__link-item">
+                  <img src="/images/icon/icon_place.svg" alt="mail" class="footer_imgs">
+                  <span class="footer__items-text">
+                    Москва, Бульвар Ленина 33
+                  </span>
+                </li>
+              </div>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__site">
+          <div class="footer__links">
+            <ul class="footer__links-list">
+              <h3 class="footer__items-title">Направления</h3>
+
+
+              <div class="footer__items-block">
+                <li class="fotter__link-item">
+                  <a href="#" class="footer_link">
+                    <img src="/images/icon/right-arrow.svg" class="footer_right-arrow">
+                    <span class="footer__items-link">
+                      Маркетинг
+                    </span>
+                  </a>
+                </li>
+              </div>
+
+              <div class="footer__items-block">
+                <li class="fotter__link-item">
+                  <a href="#" class="footer_link">
+                    <img src="/images/icon/right-arrow.svg" class="footer_right-arrow">
+                    <span class="footer__items-link">
+                      IT
+                    </span>
+                  </a>
+                </li>
+              </div>
+
+              <div class="footer__items-block">
+                <li class="fotter__link-item">
+                  <a href="#" class="footer_link">
+                    <img src="/images/icon/right-arrow.svg" class="footer_right-arrow">
+                    <span class="footer__items-link">
+                      HR
+                    </span>
+                  </a>
+                </li>
+              </div>
+
+              <div class="footer__items-block">
+                <li class="fotter__link-item">
+                  <a href="#" class="footer_link">
+                    <img src="/images/icon/right-arrow.svg" class="footer_right-arrow">
+                    <span class="footer__items-link">
+                      Менеджмент
+                    </span>
+                  </a>
+                </li>
+              </div>
+
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__directions">
+          <div class="footer__links">
+            <ul class="footer__links-list">
+              <h3 class="footer__items-title">Основные ссылки</h3>
+
+              <div class="footer__items-block">
+                <li class="fotter__link-item">
+                  <a href="#" class="footer_link">
+                    <img src="/images/icon/right-arrow.svg" class="footer_right-arrow">
+                    <span class="footer__items-link">
+                      Главная
+                    </span>
+                  </a>
+                </li>
+              </div>
+
+              <div class="footer__items-block">
+                <li class="fotter__link-item">
+                  <a href="#" class="footer_link">
+                    <img src="/images/icon/right-arrow.svg" class="footer_right-arrow">
+                    <span class="footer__items-link">
+                      Наши проекты
+                    </span>
+                  </a>
+                </li>
+              </div>
+
+              <div class="footer__items-block">
+                <li class="fotter__link-item">
+                  <a href="#" class="footer_link">
+                    <img src="/images/icon/right-arrow.svg" class="footer_right-arrow">
+                    <span class="footer__items-link">
+                      О нас
+                    </span>
+                  </a>
+                </li>
+              </div>
+
+              <div class="footer__items-block">
+                <li class="fotter__link-item">
+                  <a href="#" class="footer_link">
+                    <img src="/images/icon/right-arrow.svg" class="footer_right-arrow">
+                    <span class="footer__items-link">
+                      Контакты
+                    </span>
+                  </a>
+                </li>
+              </div>
+
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__social_media">
+          <div class="footer__links">
+            <ul class="footer__links-list">
+              <h3 class="footer__items-title">Социальные сети</h3>
+
+              <div class="footer__items-block">
+                <li class="fotter__link-item">
+                  <a href="#" class="footer_link">
+                    <img src="/images/icon/right-arrow.svg" class="footer_right-arrow">
+                    <span class="footer__items-link">
+                      Telegram
+                    </span>
+                  </a>
+                </li>
+              </div>
+
+              <div class="footer__items-block">
+                <li class="fotter__link-item">
+                  <a href="#" class="footer_link">
+                    <img src="/images/icon/right-arrow.svg" class="footer_right-arrow">
+                    <span class="footer__items-link">
+                      VK
+                    </span>
+                  </a>
+                </li>
+              </div>
+
+              <div class="footer__items-block">
+                <li class="fotter__link-item">
+                  <a href="#" class="footer_link">
+                    <img src="/images/icon/right-arrow.svg" class="footer_right-arrow">
+                    <span class="footer__items-link">
+                      Instagram(*)
+                    </span>
+                  </a>
+                </li>
+              </div>
+
+              <div class="footer__items-block">
+                <li class="fotter__link-item">
+                  <a href="#" class="footer_link">
+                    <img src="/images/icon/right-arrow.svg" class="footer_right-arrow">
+                    <span class="footer__items-link">
+                      Twitter
+                    </span>
+                  </a>
+                </li>
+              </div>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr class="line4">
+
+      <div class="inc">
+
+        <span class="main__about-text">
+          (с) 2024. Все права защищены.
+        </span>
 
       </div>
     </div>
@@ -227,6 +562,10 @@
 
 </body>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/mixitup.min.js"></script>
 <script src="js/main.js"></script>
 
 </html>
