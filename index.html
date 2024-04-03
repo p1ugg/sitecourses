@@ -20,19 +20,14 @@
             <div class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
-                  <a href="#" class="header__nav-link">Главная</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="#" class="header__nav-link">Наши проекты</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="#" class="header__nav-link">Курсы</a>
-                </li>
-                <li class="header__nav-item">
-                  <a href="#" class="header__nav-link">Новости</a>
+                  <a href="#" class="header__nav-link">Каталог курсов</a>
                 </li>
                 <li class="header__nav-item">
                   <a href="#" class="header__nav-link">Контакты</a>
+                </li>
+
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Техподдержка</a>
                 </li>
               </ul>
             </div>
@@ -44,12 +39,11 @@
       <div class="header__body">
         <div class="container">
           <div class="header__body-main">
-            <div class="header__body-text"><span>Передовая IT студия</span></div>
-            <h1 class="header__body-title">Мы создаем легкие решения
-              сложных задач и проблем</h1>
+            <span class="header__body-text">Студия по созданию курсов</span>
+            <h1 class="header__body-title">Открой для себя новую профессию благодаря нашим курсам</h1>
 
             <a href="#" class="header__body-btn">
-              <div class="header__btn-box">Наши проекты</div>
+              <div class="header__btn-box">Наши курсы</div>
 
             </a>
           </div>
@@ -71,7 +65,7 @@
           </div>
           <div class="about__row">
             <div class="about__row-item">
-              <img class="about__imagee" src="../images/icons/icon-fiel.svg">
+              <img class="about__imagee" src="./images/plan-list-svgrepo-com.svg">
               <div class="about__textsss">
                 <h3 class="about__row-title">Создание сайтов</h3>
                 <span class="main__about-text">
@@ -81,7 +75,7 @@
 
             </div>
             <div class="about__row-item">
-              <img class="about__imagee" src="../images/icons/icon-fiel.svg">
+              <img class="about__imagee" src="./images/plan-list-svgrepo-com.svg">
               <div class="about__textsss">
                 <h3 class="about__row-title">Создание сайтов</h3>
                 <span class="main__about-text">
@@ -91,7 +85,7 @@
 
             </div>
             <div class="about__row-item">
-              <img class="about__imagee" src="../images/icons/icon-fiel.svg">
+              <img class="about__imagee" src="./images/plan-list-svgrepo-com.svg">
               <div class="about__textsss">
                 <h3 class="about__row-title">Создание сайтов</h3>
                 <span class="main__about-text">
@@ -130,7 +124,7 @@
           </div>
 
           <div class="stats__img">
-            <img src="./images/stats-img.jpg" class="stats__inner-img">
+            <img src="./images/desk-lamp-svgrepo-com.svg" class="stats__inner-img">
           </div>
         </div>
       </div>
@@ -202,7 +196,12 @@
           <ul class="directions__filter-box">
             <li class="directions__filter-item">
               <button class="directions__filter-btn directions__filter-btn--active" type="button"
-                data-filter="all">Популярное</button>
+                data-filter="all">Все</button>
+            </li>
+
+            <li class="directions__filter-item">
+              <button class="directions__filter-btn" type="button"
+                data-filter=".directions__list-item--popular">Популярное</button>
             </li>
             <li class="directions__filter-item">
               <button class="directions__filter-btn" type="button"
@@ -225,7 +224,8 @@
             </li>
           </ul>
           <ul class="directions__list">
-            <li class="mix directions__list-item directions__list-item--marketing" data-order="1">
+
+            <li class="mix directions__list-item directions__list-item--marketing directions__list-item--popular" data-order="1">
               <a class="directions__list-link" href="#">
                 <div class="directions__image-box">
                   <img src="images/directions/1.jpg" alt="">
@@ -237,7 +237,15 @@
                     своего правилами щеке злых ему собрал дорогу, лучше, до запятой которое выйти сих толку запятых,
                     силуэт она великий.
                   </p>
-                  <div class="directions__link-btn">Посмотреть курс</div>
+                  <div class="direction__inner-content__price">
+                    <div class="directions__link-btn">Купить курс</div>
+                    <span class="directions__inner-content__text">
+                      500
+                      <sup clas="directions__sup">₽</sup>
+                    </span>
+                  </div>
+
+
                 </div>
               </a>
             </li>
@@ -257,6 +265,7 @@
                 </div>
               </a>
             </li>
+
             <li class="mix directions__list-item directions__list-item--hr" data-order="3">
               <a class="directions__list-link" href="#">
                 <div class="directions__image-box">
@@ -273,7 +282,7 @@
                 </div>
               </a>
             </li>
-            <li class="mix directions__list-item directions__list-item--design" data-order="4">
+            <li class="mix directions__list-item directions__list-item--design directions__list-item--popular" data-order="4">
               <a class="directions__list-link" href="#">
                 <div class="directions__image-box">
                   <img src="images/directions/4.jpg" alt="">
