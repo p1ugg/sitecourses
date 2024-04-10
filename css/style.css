@@ -21,8 +21,8 @@ html, body{
 .line{
   width: 1920px;
   height: 1px;
-  opacity: 0.5;
-  background: #A1A1A1;
+  opacity: 0.7;
+  background: #797979;
 }
 .line2{
   width: 107px;
@@ -75,6 +75,7 @@ html, body{
 .header__nav-link:hover{
   color:#FF3F3A;
 }
+
 .header__nav-item{
   margin-right: 40px;
 }
@@ -111,6 +112,7 @@ html, body{
 
 .header__body-text {
   font-size: 18px;
+  font-weight:600;
 	position: relative;
 	color: var(--dark, #323232);
 	cursor: pointer;
@@ -189,17 +191,15 @@ html, body{
   margin-bottom: 70px;
 }
 
+
 .main__about-title {
   color: var(--dark, #323232);
-text-align: center;
-width: auto;
-height: auto;
-flex-shrink: 0;
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: 146.28%; /* 52.661px */
-margin-bottom: 50px;
+  width: 900px;
+  font-size: 36px;
+  margin: 0 auto;
+  font-weight: 700;
+  line-height: 146.28%;
+  margin-bottom: 50px;
 }
 
 .main__about-text{
@@ -684,6 +684,58 @@ button[type="submit"]:hover{
 }
 
 
+
+
+
+
+/* -------------------------------------------------HOW_TO_PAY--------------------------- */
+
+
+.how_to_pay__inner {
+  margin: 100px 50px;
+}
+
+.how_to_pay__items {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.how_to_pay__item {
+  display: block;
+}
+
+.how_to_pay__block {
+
+}
+
+.how_to_pay__img {
+  max-width: 200px;
+}
+
+.div__how_to_pay__textBlock {
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+.how_to_pay__text {
+  color: var(--grey, #999);
+  max-width: 710px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  /* line-height: 158.47%;  */
+}
+.t549__arrow svg {
+  display: block;
+}
+
+.t549__arrow {
+  max-width: 100px;
+  display: inline-block;
+  margin: auto 0;
+}
+
 /* -----------------FOOTER------------------- */
 
 .footer{
@@ -794,3 +846,4 @@ background: #E0E0E0;
 .footer__items-link:hover{
   color:#FF3F3A;
   }
+
