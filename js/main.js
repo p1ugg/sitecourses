@@ -83,11 +83,12 @@ $(function () {
   })
 
   $(".header__nav-list a, .header__top-btn, .footer__go-top").on("click", function (e) {
-    e.preventDefault()
-    var id = $(this).attr('href'),
-      top = $(id).offset().top
-    $('body,html').animate({ scrollTop: top }, 800)
-  })
+    e.preventDefault();
+    var id = $(this).attr('href');
+    var top = $(id).offset().top;
+    $('body, html').animate({ scrollTop: top }, 800);
+});
+
 
   setInterval(() => {
     if ($(window).scrollTop() > 0 && $('.header__top').hasClass('header__top--open') === false) {
