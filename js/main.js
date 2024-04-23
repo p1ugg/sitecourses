@@ -108,15 +108,28 @@ $(function () {
   })
 })
 
-document.addEventListener("DOMContentLoaded", function(){
-  var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
-  console.log(scrollbar);
-  document.querySelector('[href="#openModal"]').addEventListener('click',function(){
-    document.body.style.overflow = 'hidden';
-    document.querySelector('#openModal').style.marginLeft = scrollbar;
-  });
-  document.querySelector('[href="#close"]').addEventListener('click',function(){
-    document.body.style.overflow = 'visible';
-    document.querySelector('#openModal').style.marginLeft = '0px';
-  });
+// Открыть модальное окно
+document.getElementById("open-modal-btn").addEventListener("click", function() {
+  document.getElementById("my-modal").classList.add("open")
+})
+
+// Закрыть модальное окно
+document.getElementById("close-my-modal-btn").addEventListener("click", function() {
+  document.getElementById("my-modal").classList.remove("open")
+})
+
+// Закрыть модальное окно при нажатии на Esc
+window.addEventListener('keydown', (e) => {
+  if (e.key === "Escape") {
+      document.getElementById("my-modal").classList.remove("open")
+  }
+});
+
+// Закрыть модальное окно при клике вне его
+document.querySelector("#my-modal .modal__box").addEventListener('click', event => {
+  event._isClickWithInModal = true;
+});
+document.getElementById("my-modal").addEventListener('click', event => {
+  if (event._isClickWithInModal) return;
+  event.currentTarget.classList.remove('open');
 });
